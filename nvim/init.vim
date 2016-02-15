@@ -11,6 +11,7 @@ Plug 'matze/vim-move'
 Plug 'pangloss/vim-javascript'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
@@ -57,3 +58,10 @@ inoremap <leader>s <C-c>:w<cr>
 " Quick-close?
 nnoremap <leader>q :close<cr>
 inoremap <leader>q <C-c>:close<cr>
+
+" Quick-only?
+nnoremap <leader>o :only<cr>
+inoremap <leader>o <C-c>:only<cr>
+
+" Clipboard?
+set clipboard+=unnamedplus
