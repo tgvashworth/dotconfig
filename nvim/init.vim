@@ -12,6 +12,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
