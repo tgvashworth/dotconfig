@@ -38,7 +38,7 @@ set expandtab
 
 " How can I set up a ruler at a specific column?
 " http://vi.stackexchange.com/questions/356/how-can-i-set-up-a-ruler-at-a-specific-column
-set colorcolumn=80
+set colorcolumn=100
 highlight ColorColumn ctermbg=8
 
 " How do I trim trailing whitespace?
@@ -63,6 +63,10 @@ inoremap <leader>q <C-c>:close<cr>
 " Quick-only?
 nnoremap <leader>o :only<cr>
 inoremap <leader>o <C-c>:only<cr>
+
+" Quick-nohlsearch?
+nnoremap <leader>n :noh<cr>
+inoremap <leader>n <C-c>:noh<cr>
 
 " Clipboard?
 set clipboard+=unnamedplus
