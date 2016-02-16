@@ -13,6 +13,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 Plug 'leafgarland/typescript-vim'
+Plug 'mtth/scratch.vim'
 
 call plug#end()
 
@@ -65,8 +66,10 @@ nnoremap <leader>o :only<cr>
 inoremap <leader>o <C-c>:only<cr>
 
 " Quick-nohlsearch?
-nnoremap <leader>n :noh<cr>
-inoremap <leader>n <C-c>:noh<cr>
+nnoremap <leader><leader> :noh<cr>
+inoremap <leader><leader> <C-c>:noh<cr>
+nnoremap <Esc><Esc> :noh<cr>
+inoremap <Esc><Esc> <C-c>:noh<cr>
 
 " Clipboard?
 set clipboard+=unnamedplus
