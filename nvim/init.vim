@@ -14,6 +14,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 Plug 'leafgarland/typescript-vim'
 Plug 'mtth/scratch.vim'
+Plug 'rking/ag.vim'
 
 call plug#end()
 
