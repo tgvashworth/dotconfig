@@ -15,6 +15,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'leafgarland/typescript-vim'
 Plug 'mtth/scratch.vim'
 Plug 'rking/ag.vim'
+Plug 'tpope/vim-eunuch'
 
 call plug#end()
 
