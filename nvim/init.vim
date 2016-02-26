@@ -17,6 +17,7 @@ Plug 'mtth/scratch.vim'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-sleuth'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
