@@ -16,6 +16,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mtth/scratch.vim'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-sleuth'
 
 call plug#end()
 
@@ -29,15 +30,15 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " ctrp respect .gitignore
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-" How do I make vim indent with spacs?
-" http://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim
+"" How do I make vim indent with spacs?
+"" http://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
-" On pressing tab, insert 4 spaces
-set expandtab
+"" On pressing tab, insert 4 spaces
+"set expandtab
 
 " How can I set up a ruler at a specific column?
 " http://vi.stackexchange.com/questions/356/how-can-i-set-up-a-ruler-at-a-specific-column
@@ -75,3 +76,6 @@ inoremap <Esc><Esc> <C-c>:noh<cr>
 
 " Clipboard?
 set clipboard+=unnamedplus
+
+" How do I stop vim wrapping?
+set nowrap
