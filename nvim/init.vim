@@ -18,6 +18,7 @@ Plug 'rking/ag.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-sleuth'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -35,10 +36,10 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 "" http://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim
 filetype plugin indent on
 " show existing tab with 4 spaces width
-set tabstop=4
+"set tabstop=4
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
-"" On pressing tab, insert 4 spaces
+" On pressing tab, insert 4 spaces
 "set expandtab
 
 " How can I set up a ruler at a specific column?
@@ -78,5 +79,8 @@ inoremap <Esc><Esc> <C-c>:noh<cr>
 " Clipboard?
 set clipboard+=unnamedplus
 
-" How do I stop vim wrapping?
+" Wrapping
 set nowrap
+
+" Show invisibles
+set list
