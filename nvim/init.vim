@@ -40,7 +40,7 @@ filetype plugin indent on
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
-"set expandtab
+set expandtab
 
 " How can I set up a ruler at a specific column?
 " http://vi.stackexchange.com/questions/356/how-can-i-set-up-a-ruler-at-a-specific-column
@@ -83,4 +83,4 @@ set clipboard+=unnamedplus
 set nowrap
 
 " Show invisibles
-set list
+et list
