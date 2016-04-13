@@ -83,4 +83,4 @@ set clipboard+=unnamedplus
 set nowrap
 
 " Show invisibles
-et list
+set list
