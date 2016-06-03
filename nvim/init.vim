@@ -19,6 +19,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-sleuth'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
@@ -84,3 +85,7 @@ set nowrap
 
 " Show invisibles
 set list
+
+" Color scheme
+set background=dark
+colorscheme base16-atelierlakeside
