@@ -89,3 +89,7 @@ set list
 " Color scheme
 set background=dark
 colorscheme base16-atelierlakeside
+
+" Line numbers
+set relativenumber
+set number
