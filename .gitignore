@@ -19,3 +19,4 @@ pants/
 pkginit/
 promise-it-wont-hurt/
 stream-adventure/
+nvim/autoload
