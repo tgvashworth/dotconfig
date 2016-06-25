@@ -20,6 +20,8 @@ Plug 'tpope/vim-sleuth'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'chriskempson/base16-vim'
+Plug 'gf3/peg.vim'
+Plug 'lambdatoast/elm.vim'
 
 call plug#end()
 
