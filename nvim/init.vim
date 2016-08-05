@@ -7,13 +7,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'airblade/vim-gitgutter'
 Plug 'Valloric/YouCompleteMe'
-Plug 'matze/vim-move'
-Plug 'pangloss/vim-javascript'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
-Plug 'leafgarland/typescript-vim'
-Plug 'mtth/scratch.vim'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-sleuth'
@@ -21,11 +15,10 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'chriskempson/base16-vim'
 Plug 'gf3/peg.vim'
-Plug 'lambdatoast/elm.vim'
 
 call plug#end()
 
-" How can I open a NERDTree fish when vim starts up? Fish
+" How can I open a NERDTree fish when vim starts up
 " autocmd vimenter * NERDTree
 " How can I close vim if the only window left open is a NERDTree?<Paste>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -35,7 +28,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " ctrp respect .gitignore
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-"" How do I make vim indent with spacs?
+"" How do I make vim indent with spaces?
 "" http://stackoverflow.com/questions/234564/tab-key-4-spaces-and-auto-indent-after-curly-braces-in-vim
 filetype plugin indent on
 " show existing tab with 4 spaces width
@@ -74,8 +67,6 @@ nnoremap <leader>o :only<cr>
 inoremap <leader>o <C-c>:only<cr>
 
 " Quick-nohlsearch?
-nnoremap <leader><leader> :noh<cr>
-inoremap <leader><leader> <C-c>:noh<cr>
 nnoremap <Esc><Esc> :noh<cr>
 inoremap <Esc><Esc> <C-c>:noh<cr>
 
@@ -90,7 +81,7 @@ set list
 
 " Color scheme
 set background=dark
-colorscheme base16-atelierlakeside
+colorscheme base16-atelier-lakeside
 
 " Line numbers
 set relativenumber
