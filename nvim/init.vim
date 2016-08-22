@@ -16,6 +16,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'chriskempson/base16-vim'
 Plug 'gf3/peg.vim'
 Plug 'terryma/vim-expand-region'
+Plug 'dleonard0/pony-vim-syntax'
 
 call plug#end()
 
