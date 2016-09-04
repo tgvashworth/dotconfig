@@ -18,6 +18,7 @@ Plug 'gf3/peg.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'dleonard0/pony-vim-syntax'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
@@ -89,3 +90,6 @@ colorscheme base16-atelier-lakeside
 " Line numbers
 set relativenumber
 set number
+
+" Highlight current line
+set cursorline
