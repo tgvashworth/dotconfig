@@ -19,6 +19,7 @@ Plug 'terryma/vim-expand-region'
 Plug 'dleonard0/pony-vim-syntax'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'kevints/vim-aurora-syntax'
 
 call plug#end()
 
