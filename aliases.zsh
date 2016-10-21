@@ -14,3 +14,10 @@ function zipkin() {
         | tr -d '\r' \
         | xargs -I {} open http://go/zipkin/{}
 }
+function workon() {
+    NAME="$USER/$1"
+    git ch master && \
+    git pull && \
+    (git nbr $NAME || git ch $NAME) && \
+    git rebase master
+}
