@@ -19,8 +19,14 @@ function zipkin() {
 }
 function workon() {
     NAME="$USER/$1"
-    git ch master && \
-    git pull && \
-    (git nbr $NAME || git ch $NAME) && \
-    git rebase master
+    MASTER="master"
+    BASE="${2:=$MASTER}"
+
+    echo "Working on $NAME on $BASE"
+
+    git ch $BASE
+    [[ "$BASE" == "$MASTER" ]] && git pull
+
+    (git nbr $NAME || git ch $NAME)
+    git rebase $BASE
 }
