@@ -22,11 +22,17 @@ function workon() {
     MASTER="master"
     BASE="${2:=$MASTER}"
 
-    echo "Working on $NAME on $BASE"
+    echo "Working on $NAME from $BASE"
 
     git ch $BASE
     [[ "$BASE" == "$MASTER" ]] && git pull
 
-    (git nbr $NAME || git ch $NAME)
+    (git ch $NAME || git nbr $NAME)
     git rebase $BASE
+}
+function af() {
+    PWD=$(pwd)
+    DIR="${2:=$PWD}"
+    NAME=$1
+    find $DIR -name "$NAME"
 }

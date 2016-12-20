@@ -20,6 +20,8 @@ Plug 'dleonard0/pony-vim-syntax'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'kevints/vim-aurora-syntax'
+Plug 'jparise/vim-graphql'
+Plug 'brooth/far.vim'
 
 call plug#end()
 
