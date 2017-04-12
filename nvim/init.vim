@@ -47,8 +47,8 @@ set expandtab
 
 " How can I set up a ruler at a specific column?
 " http://vi.stackexchange.com/questions/356/how-can-i-set-up-a-ruler-at-a-specific-column
-set colorcolumn=100
-highlight ColorColumn ctermbg=8
+"set colorcolumn=100
+"highlight ColorColumn ctermbg=8
 
 " How do I trim trailing whitespace?
 autocmd BufWritePre * StripWhitespace
@@ -96,3 +96,24 @@ set number
 
 " Highlight current line
 set cursorline
+
+" chdir
+"set autochdir
+
+" How do I jump to definition?
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
+
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
+" How can I make ctrlp not use the gitroot?
+"let g:ctrlp_working_path_mode = ''
+
+" How do I split the screen in the expected directions?
+set splitbelow  " new window below when `split`
+set splitright  " new window right when `vsplit`
