@@ -1,12 +1,12 @@
-configstore/
-nvim/plugged
-nvim/.netrwhist
 cipherhub/
+configstore/
 count-to-6/
 fish/
 footballbot workshop/
+gcloud
 git-it/
 gtk-2.0/
+htop
 hub
 inkscape/
 invoicer/
@@ -15,8 +15,13 @@ levelmeup/
 meld/
 nodebot-workshop/
 nvim.bk/
+nvim/.netrwhist
+nvim/.vim
+nvim/autoload
+nvim/colors
+nvim/plugged
 pants/
 pkginit/
 promise-it-wont-hurt/
 stream-adventure/
-nvim/autoload
+yarn/
