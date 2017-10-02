@@ -22,6 +22,8 @@ Plug 'tpope/vim-surround'
 Plug 'kevints/vim-aurora-syntax'
 Plug 'jparise/vim-graphql'
 Plug 'brooth/far.vim'
+Plug 'reasonml/vim-reason'
+Plug 'tpope/vim-unimpaired'
 
 call plug#end()
 
@@ -117,3 +119,12 @@ endif
 " How do I split the screen in the expected directions?
 set splitbelow  " new window below when `split`
 set splitright  " new window right when `vsplit`
+
+" How do I enable avro-idl syntax highlighting?
+au BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
+
+" How do I make the YCM preview window close?
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+" How do I use Esc to get out of terminal mode?
+tnoremap <Esc> <C-\><C-n>
