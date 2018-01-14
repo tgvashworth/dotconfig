@@ -23,5 +23,6 @@ nvim/plugged
 pants/
 pkginit/
 promise-it-wont-hurt/
+secrets.zsh
 stream-adventure/
 yarn/

@@ -61,19 +61,16 @@ autocmd BufWritePre * StripWhitespace
 let g:gitgutter_sign_column_always = 1
 
 " What's my leader key?
-let mapleader="\\"
+let mapleader=" "
 
 " Quick-save?
 nnoremap <leader>s :w<cr>
-inoremap <leader>s <C-c>:w<cr>
 
 " Quick-close?
 nnoremap <leader>q :close<cr>
-inoremap <leader>q <C-c>:close<cr>
 
 " Quick-only?
 nnoremap <leader>o :only<cr>
-inoremap <leader>o <C-c>:only<cr>
 
 " Quick-nohlsearch?
 nnoremap <Esc><Esc> :noh<cr>

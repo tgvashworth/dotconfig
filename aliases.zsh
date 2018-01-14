@@ -1,3 +1,7 @@
+SCRIPT_DIR="$(dirname "$0")"
+[[ -f $SCRIPT_DIR/secrets.zsh ]] &&  source $SCRIPT_DIR/secrets.zsh
+[[ -f $HOME/.cargo/env ]] &&  source $HOME/.cargo/env
+
 alias so="cd ~/work/source"
 function land() {
     git ch $1 && \
@@ -35,4 +39,11 @@ function af() {
     DIR="${2:=$PWD}"
     NAME=$1
     find $DIR -name "$NAME"
+}
+
+__git_files () {
+    _wanted files expl 'local files' _files  }
+
+function greset() {
+    git status --porcelain | grep -v '??' | awk '{ print $2 }' | xargs -I % sh -c 'git ch head -- "%" || trash "%";'
 }
