@@ -58,7 +58,8 @@ autocmd BufWritePre * StripWhitespace
 " How do I ensure there's a trailing new line?
 
 " How do I keep the gitgutter in view?
-let g:gitgutter_sign_column_always = 1
+" Old: let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 
 " What's my leader key?
 let mapleader=" "
