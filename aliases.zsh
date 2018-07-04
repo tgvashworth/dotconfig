@@ -38,7 +38,7 @@ function af() {
     PWD=$(pwd)
     DIR="${2:=$PWD}"
     NAME=$1
-    find $DIR -name "$NAME"
+    exec find $DIR -name "$NAME"
 }
 
 __git_files () {

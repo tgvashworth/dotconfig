@@ -27,6 +27,9 @@ Plug 'tpope/vim-unimpaired'
 
 call plug#end()
 
+" How do I tell nvim which python to use?
+let g:python_host_prog  = '/usr/bin/python'
+
 " How can I open a NERDTree fish when vim starts up
 " autocmd vimenter * NERDTree
 " How can I close vim if the only window left open is a NERDTree?<Paste>
@@ -88,7 +91,7 @@ set list
 
 " Color scheme
 set background=dark
-colorscheme base16-atelier-lakeside
+colorscheme base16-eighties
 
 " Line numbers
 set relativenumber
@@ -126,3 +129,10 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 " How do I use Esc to get out of terminal mode?
 tnoremap <Esc> <C-\><C-n>
+
+" How do I toggle NERDTree with a key command?
+map <C-n> :NERDTreeToggle<CR>
+map <C-m> :NERDTreeFind<CR>
+
+" How do I jump to a buffer using a partial name fragment?
+map <C-b> :ls<CR>:b<Space>
