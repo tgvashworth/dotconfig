@@ -2,6 +2,8 @@ SCRIPT_DIR="$(dirname "$0")"
 [[ -f $SCRIPT_DIR/secrets.zsh ]] &&  source $SCRIPT_DIR/secrets.zsh
 [[ -f $HOME/.cargo/env ]] &&  source $HOME/.cargo/env
 
+export S="~/work/source"
+
 alias so="cd ~/work/source"
 function land() {
     git ch $1 && \
@@ -38,7 +40,7 @@ function af() {
     PWD=$(pwd)
     DIR="${2:=$PWD}"
     NAME=$1
-    exec find $DIR -name "$NAME"
+    find $DIR -name "$NAME"
 }
 
 __git_files () {
@@ -46,4 +48,8 @@ __git_files () {
 
 function greset() {
     git status --porcelain | grep -v '??' | awk '{ print $2 }' | xargs -I % sh -c 'git ch head -- "%" || trash "%";'
+}
+
+function whodis() {
+    pbpaste | tr ',' '\n' | sed -E 's/^.*<(.*)@.*>/\1/' | awk '{$1=$1;print}' | xargs -n1 -I {} -- open "http://go/who/{}"
 }
