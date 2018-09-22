@@ -24,11 +24,17 @@ Plug 'jparise/vim-graphql'
 Plug 'brooth/far.vim'
 Plug 'reasonml/vim-reason'
 Plug 'tpope/vim-unimpaired'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
 
 call plug#end()
 
 " How do I tell nvim which python to use?
-let g:python_host_prog  = '/usr/bin/python'
+let g:python_host_prog  = '/usr/local/opt/python@2/bin/python'
+
+" How do I set up ycm right?
+let g:ycm_python_binary_path = '/usr/local/opt/python@2/bin/python'
+let g:ycm_rust_src_path = '~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
 
 " How can I open a NERDTree fish when vim starts up
 " autocmd vimenter * NERDTree
