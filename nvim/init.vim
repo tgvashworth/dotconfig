@@ -34,7 +34,6 @@ let g:python_host_prog  = '/usr/local/opt/python@2/bin/python'
 
 " How do I set up ycm right?
 let g:ycm_python_binary_path = '/usr/local/opt/python@2/bin/python'
-let g:ycm_rust_src_path = '~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
 
 " How can I open a NERDTree fish when vim starts up
 " autocmd vimenter * NERDTree
