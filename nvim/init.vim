@@ -4,7 +4,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'unblevable/quick-scope'
 Plug 'itchyny/lightline.vim'
-Plug 'ntpeters/vim-better-whitespace'
+" Plug 'ntpeters/vim-better-whitespace'
 Plug 'airblade/vim-gitgutter'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdcommenter'
@@ -16,13 +16,13 @@ Plug 'sheerun/vim-polyglot'
 Plug 'chriskempson/base16-vim'
 Plug 'gf3/peg.vim'
 Plug 'terryma/vim-expand-region'
-Plug 'dleonard0/pony-vim-syntax'
+" Plug 'dleonard0/pony-vim-syntax'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'kevints/vim-aurora-syntax'
-Plug 'jparise/vim-graphql'
+" Plug 'jparise/vim-graphql'
 Plug 'brooth/far.vim'
-Plug 'reasonml/vim-reason'
+" Plug 'reasonml/vim-reason'
 Plug 'tpope/vim-unimpaired'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
@@ -96,7 +96,7 @@ set list
 
 " Color scheme
 set background=dark
-colorscheme base16-eighties
+colorscheme base16-default-dark
 
 " Line numbers
 set relativenumber

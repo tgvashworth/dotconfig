@@ -1,3 +1,4 @@
+browser-launcher/
 cipherhub/
 configstore/
 count-to-6/
@@ -6,10 +7,13 @@ footballbot workshop/
 gcloud
 git-it/
 gtk-2.0/
+gh/hosts.yml
 htop
 hub
 inkscape/
 invoicer/
+iterm2/AppSupport
+karabiner/automatic_backups/
 lasercat-workshop/
 levelmeup/
 meld/
@@ -23,6 +27,9 @@ nvim/plugged
 pants/
 pkginit/
 promise-it-wont-hurt/
+rclone/
+rstudio/
 secrets.zsh
 stream-adventure/
 yarn/
+wireshark/
